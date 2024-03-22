@@ -8,6 +8,8 @@
         <part Name="Physics" Category="Trinket" />
         <part Name="NoRust" />
         <part Name="Commerce" Value="80" />
+        //change later!!
+        <property Name="Story" Value="Bigsimple_Cup_Story" />
 
 
     </object>

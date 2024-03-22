@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<books>
+    <book   ID="Bigsimple_Cup_Story" Title="{{W|From many lost notes}}">
+        <page>
+This is the beginning of the story
+        </page>
+
+    </book>
+</books>
