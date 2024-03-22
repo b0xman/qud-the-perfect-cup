@@ -2,8 +2,8 @@
 <objects>
 
     <object Name="Bigsimple_Perfect_Cup" Inherits="Item">
-        <part Name="Render" DisplayName="cup" RenderString="u" ColorString="&amp;w" DetailColor="R" RenderLayer="5" Tile="Items/sw_gadget.bmp" />
-        <part Name="Armor" WornOn="Hand" DV="0" AV="0" Intelligence="2" />
+        <part Name="Render" DisplayName="cup" RenderString="u" ColorString="&amp;w" DetailColor="y" RenderLayer="5" Tile="Bigsimple_Cup/Cup.png" />
+        <part Name="Armor" WornOn="Hand" DV="1" AV="0" Intelligence="2" />
         <part Name="Examiner" Alternate="UnknownSmallTrinket" Unknown="UnknownSmallTrinket" Complexity="1" />
         <part Name="Physics" Category="Trinket" />
         <part Name="NoRust" />
