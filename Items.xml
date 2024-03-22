@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+
+    <object Name="Bigsimple_Perfect_Cup" Inherits="Item">
+        <part Name="Render" DisplayName="cup" RenderString="u" ColorString="&amp;w" DetailColor="R" RenderLayer="5" Tile="Items/sw_gadget.bmp" />
+        <part Name="Armor" WornOn="Hand" DV="0" AV="0" Intelligence="2" />
+        <part Name="Examiner" Alternate="UnknownSmallTrinket" Unknown="UnknownSmallTrinket" Complexity="1" />
+        <part Name="Physics" Category="Trinket" />
+        <part Name="NoRust" />
+        <part Name="Commerce" Value="80" />
+
+
+    </object>
+
+</objects>
+
