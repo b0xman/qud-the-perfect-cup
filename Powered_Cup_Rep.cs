@@ -80,7 +80,11 @@ namespace XRL.World.Parts
                 && ParentObject.TryGetPart(out LiquidFueledPowerPlant plant)
                 && plant.ChargeCounter == 0)
                 {
-                    XDidY(Actor:ParentObject.Equipped,Verb: "take", Extra:"a sip");
+                    XDidYToZ(
+                        Actor:ParentObject.Equipped,
+                        Verb: "take", 
+                        Preposition: "a sip from",
+                        Object:ParentObject);
                 }
 
         }
