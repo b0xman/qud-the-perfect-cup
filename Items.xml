@@ -7,7 +7,13 @@
         <part Name="Armor" WornOn="Hand" DV="1" AV="0" Intelligence="2" />
         <part Name="Examiner" Alternate="UnknownSmallTrinket" Unknown="UnknownSmallTrinket" Complexity="1" />
         <part Name="Physics" Category="Trinket" />
+        <part Name="RulesDescription" Text="When holding a beverage, this cup provides a bonus to reputation when performing a water ritual." />
+        <part Name="LeakWhenBroken"/>
+        <part Name="ChargeSink" ChargeUse="1"/>
+        <part Name="LiquidVolume" MaxVolume="4" StartVolume="0" />
+        <part Name="LiquidFueledPowerPlant" Liquids="water::50" />
         <part Name="NoRust" />
+        <part Name="PoweredCupReputation" />
         <part Name="Commerce" Value="80" />
         <property Name="Story" Value="Bigsimple_Cup_Story" />
         <removetag Name="DynamicObjectsTable:Items" />
