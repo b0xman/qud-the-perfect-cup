@@ -26,7 +26,7 @@ namespace XRL.World.Parts
                 base.WantEvent(ID, cascade)
 
                 || ID == GetWaterRitualReputationAmountEvent.ID
-                // || ID == WaterRitualStartEvent.ID
+                || ID == GetTinkeringBonusEvent.ID
             ;
         }
         
@@ -45,6 +45,55 @@ namespace XRL.World.Parts
             return base.HandleEvent(E);
         }
         
+        public override bool HandleEvent(GetTinkeringBonusEvent E)
+        {
+            if (
+            (E.Type == "Inspect" || E.Type == "Disassemble")
+            && E.Actor == ParentObject.Equipped
+            && IsReady(UseCharge:false)
+            )
+            {
+                E.Bonus += 2;
+                
+            }
+            return base.HandleEvent(E);
+        }
+
+        public override bool WantTurnTick()
+        {
+            return true;
+        }
+
+        public override bool WantTenTurnTick()
+        {
+            return true;
+        }
+
+        public override bool WantHundredTurnTick()
+        {
+            return true;
+        }
+
+        public override void TurnTick(Int64 TurnNumber)
+        {
+            if (ConsumeChargeIfOperational(ChargeUse:1)
+                && ParentObject.TryGetPart(out LiquidFueledPowerPlant plant)
+                && plant.ChargeCounter == 0)
+                {
+                    XDidY(Actor:ParentObject.Equipped,Verb: "take", Extra:"a sip");
+                }
+
+        }
+
+        public override void TenTurnTick(Int64 TurnNumber)
+        {
+            ConsumeChargeIfOperational(ChargeUse: 10);
+        }
+
+        public override void HundredTurnTick(Int64 TurnNumber)
+        {
+            ConsumeChargeIfOperational(ChargeUse: 100);
+        }
 
 
     }
