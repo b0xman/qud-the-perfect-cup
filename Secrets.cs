@@ -23,7 +23,7 @@ namespace Bigsimple_Perfect_Cup_Secret
             //   using e.g. the revealsecret wish.
             var secret = builder.AddSecret(
                 zoneID,
-                "the location of an interesting cup",
+                "an interesting cup",
                 new[] { "historic", "saltdunes", "artifact", "merchant" },
                 "Artifacts",
                 "$Perfect_Cup_Secret"
