@@ -38,7 +38,6 @@
 
     <object Name="Bigsimple_Perfect_Low Mensa" Inherits="Low Table">
         <part Name="Description" Short="There is a small ring shaped indent eroded onto this table from thousands of gentle beverages brewed and savored. No coaster felt worthy. The Table is grateful." />
-        <removetag Name="DynamicObjectsTable:AnimatedFurniture" />
         <tag Name="ExcludeFromDynamicEncounters" />
     </object>
 
