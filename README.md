@@ -2,7 +2,7 @@
 
 ## Find the Cup
 
-In order to know the wherabouts of the cup, wish for "revealsecret:$Perfect_Cup_Secret"
+In order to know the wherabouts of the cup, wish for `revealsecret:$Perfect_Cup_Secret`
 
 ## Stretchgoals/Future Ideas
 
